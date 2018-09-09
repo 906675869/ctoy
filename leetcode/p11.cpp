@@ -39,15 +39,15 @@
  *
  */
 #include <stdio.h>
+#include "utils/utils.h"
 
 int moreWaterOn2(int s[], int size);
 int moreWater(int s[], int size);
-int min(int a, int b);
 
-int main(){
-    int s[] = {1,8,6,2,5,4,8,3,7};
-    printf("%d", moreWater(s, 9));
-}
+//int main(){
+//    int s[] = {1,8,6,2,5,4,8,3,7};
+//    printf("%d", moreWater(s, 9));
+//}
 
 int moreWater(int s[], int size){
     int r, l, max;
@@ -73,9 +73,5 @@ int moreWaterOn2(int s[], int size){
         }
     }
     return max;
-}
-
-int min(int a, int b){
-    return a > b ? b : a;
 }
 

@@ -3,4 +3,4 @@ project(ctoy)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(ctoy main.cpp utils/utils.h utils/utils.cpp leetcode/p11.cpp leetcode/p1_15_18.cpp)
+add_executable(ctoy main.cpp leetcode/utils/utils.h leetcode/utils/utils.cpp leetcode/p11.cpp leetcode/p1_15_18.cpp)
