@@ -53,14 +53,14 @@ int moreWater(int s[], int size){
     int r, l, max;
     r = 0;
     l = size - 1;
-    max = min(s[r], s[l]) * (l - r);
+    max = MIN(s[r], s[l]) * (l - r);
     while (r < l) {
         if( s[r] < s[l]){
             r++;
         } else {
             l--;
         }
-        max = min(s[r], s[l]) * (l - r) > max ? min(s[r], s[l]) * (l - r) : max;
+        max = MAX(MIN(s[r], s[l]) * (l - r), max);
     }
     return max;
 }
@@ -69,7 +69,7 @@ int moreWaterOn2(int s[], int size){
     int max = 0;
     for(int i = 0; i < size - 1; i++){
         for(int j = i + 1; j < size; j++){
-            max = min(s[i], s[j]) * (j - i) > max ? min(s[i], s[j]) * (j - i) : max;
+            max = MAX(MIN(s[i], s[j]) * (j -i), max);
         }
     }
     return max;

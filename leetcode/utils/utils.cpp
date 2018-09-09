@@ -4,14 +4,6 @@
 
 #include "utils.h"
 
-int min(int a, int b){
-    return a > b ? b : a;
-}
-
-int max(int a, int b){
-    return a > b ? a : b;
-}
-
 void copy(char from[], char to[], int size){
     for(int i = 0; i < size; i++){
         to[i] = from[i];

@@ -5,9 +5,11 @@
 #ifndef CTOY_UTILS_H
 #define CTOY_UTILS_H
 
-int min(int a, int b);
+#define MIN(A, B) ((A) > (B) ? (B) : (A))
 
-int max(int a, int b);
+#define MAX(A, B) ((A) > (B) ? (A) : (B))
+
+#define dprintf(expr) printf(#expr "=%d\n", expr)
 
 void copy(char from[], char to[], int size);
 
