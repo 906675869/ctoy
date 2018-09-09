@@ -5,10 +5,10 @@
 #ifndef CTOY_UTILS_H
 #define CTOY_UTILS_H
 
+#endif //CTOY_UTILS_H
+
 int min(int a, int b);
 
 int max(int a, int b);
 
 void copy(char from[], char to[]);
-
-#endif //CTOY_UTILS_H
